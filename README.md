@@ -1,5 +1,5 @@
 # css-cheat-sheet
-My cheat sheet for CSS
+So it begins. My cheat sheet for CSS.
 
 ### Terminology 
 * descendants - children + grandchildren + ... of
