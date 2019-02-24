@@ -27,3 +27,22 @@ My cheat sheet for CSS
 * classes - 10 points
 * elements - 1 point
 * !important - overrides everything (try not to use this, rather write nice and clean code!)
+
+### Font size
+* absolute - px
+* relative - em, percentages - used when making responsive design
+
+```css
+.container {
+  font-size: 12px;
+}
+article {
+  font-size: 14px;
+}
+article h2 {
+  font-size: 2em; // inherit font size from article and miltiple it by 2
+}
+article p {
+  font-size: 50%; // inherit font size from article and take 50% of size
+}
+```
