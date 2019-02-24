@@ -57,8 +57,8 @@ Note: some families already exist on user's computer. Remember to use the font f
 ```
 
 ### Text decoration
+Possible values: ```inerhit line-through none underline overline inherit;```
 ```css
-/* text-decoration: inerhit line-through none underline overline inherit; */
 .container {
   text-decoration: underline;
 }
