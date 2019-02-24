@@ -28,6 +28,7 @@ My cheat sheet for CSS
 * elements - 1 point
 * !important - overrides everything (try not to use this, rather write nice and clean code!)
 
+# CSS properties
 ### Font size
 * absolute - px
 * relative - em, percentages - used when making responsive design
@@ -40,9 +41,17 @@ article {
   font-size: 14px;
 }
 article h2 {
-  font-size: 2em; // inherit font size from article and miltiple it by 2
+  font-size: 2em; /* inherit font size from article and miltiple it by 2 */
 }
 article p {
-  font-size: 50%; // inherit font size from article and take 50% of size
+  font-size: 50%; /* inherit font size from article and take 50% of size */
+}
+```
+
+### Font family
+Note: some families already exist on user's computer. Remember to use the font family stack for fallbacks.
+```css
+.container {
+  font-family: arial, helvetica, sans-serif; /* if arial is not available, use helvetica etc. */
 }
 ```
