@@ -10,12 +10,17 @@ My cheat sheet for CSS
 * 
 
 ### Selectors
-* #container - ID selector
-* .container - class selector
-* span - element selector
-* span, div, p - multiple elements selector
-* #container p - select '''p''' that is the descendant of '''#container'''
-* #container > p - select '''p''' that is the child od '''#container'''
+* ```#container``` - ID selector
+* ```.container``` - class selector
+* ```span``` - element selector
+* ```span, div, p``` - multiple elements selector
+* ```#container p``` - select ```p``` that is the descendant of ```#container```
+* ```#container > p``` - select ```p``` that is the child od ```#container```
+* ```h2 + p``` - adjacent selector, the one that comes directly after the ```h2```
+* ```input[type="text"]``` - attribute selector
+* ```span:hover``` - dynamic pseudo selector (behavior) - hover, presses, checked etc
+* ```ul:nth-child(5)``` - structural pseudo selector (parent-child relationship) - 5th li tag, element without children etc.
+* ```*``` - universal selector (mostly used to override default styles)
 
 ### Selector specific points
 * ID - 100 points
