@@ -55,3 +55,11 @@ Note: some families already exist on user's computer. Remember to use the font f
   font-family: arial, helvetica, sans-serif; /* if arial is not available, use helvetica etc. */
 }
 ```
+
+### Text decoration
+```css
+/* text-decoration: inerhit line-through none underline overline inherit; */
+.container {
+  text-decoration: underline;
+}
+```
