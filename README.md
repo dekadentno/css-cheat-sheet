@@ -128,7 +128,7 @@ Spacing between words: e.g. space   between   words
 
 Values mostly in pixels;
 ```css
-.container{
+.container {
   letter-spacing: 3px;
   word-spacing: 5px;
   letter-spacing: 2em; /* the case with em's is font-size times number of em's */
@@ -142,7 +142,7 @@ The font size itself is not included, meaning,if you put ```line-height``` to be
 
 Possible values: normal|number|length|initial|inherit
 ```css
-.container{
+.container {
   line-height: 24px;
   line-height: 2em; /* the case with em's is font-size times number of em's */
 }
@@ -151,8 +151,21 @@ Possible values: normal|number|length|initial|inherit
 ### Border style
 Mostly used values: solid|none|hidden
 ```css
-.container{
+.container {
   border: 1px solid black; /* width, style, color */
 }
 ```
 
+### Width and height
+They Can be static (in pixels) and dynamic (in percentages).
+```css
+.container {
+  height: 100px; /* static height */
+  width: 300px; /* static width, no matter how big the browser is */
+  width: 70%; /* dynamic, width is 70% of the parent element */
+}
+.container{
+  width: 40%;
+  display: inline-block; /* display inline but keep respecting the box model (block elements) */
+}
+```
