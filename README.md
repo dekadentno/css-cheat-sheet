@@ -93,3 +93,25 @@ Changing the color of the text.
  }
 ```
 
+### Letter spacing and word spacing
+Spacing between letters: e.g. s p a c i n g
+Spacing between words: e.g. space   between   words
+Values mostly in pixels;
+```css
+.container{
+  letter-spacing: 3px;
+  word-spacing: 5px;
+  letter-spacing: 2em; /* the case with em's is font-size times number of em's */
+}
+```
+
+### Line height
+Vertical space between lines in a paragraph. Not the gap, just the height of the line.
+The font size itself is not included, meaning,if you put ```line-height``` to be 12px and the ```font-size``` itself is 12px, nothig will happen.
+Possible values: normal|number|length|initial|inherit
+```css
+.container{
+  line-height: 24px;
+  line-height: 2em; /* the case with em's is font-size times number of em's */
+}
+```
