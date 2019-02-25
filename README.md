@@ -1,6 +1,13 @@
 # css-cheat-sheet
 So it begins. My cheat sheet for CSS.
 
+### Regards & learning materials
+I was inspired and finally motivated to learn CSS because of [iamshaunjp](https://github.com/iamshaunjp) aka [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) and his fantastic tutorials.
+
+### HTML elements
+* block elements - always starts on a new line and takes up the full width available (div, fieldset, form, footer, h1-h6, header, li, nav, ol, p, table, ul, video)
+* inline elements - do not start on a new line and only take up as much width as necessary (a, button, i, img, input, label, span, strong, textarea)
+
 ### Terminology 
 * descendants - children + grandchildren + ... of
 * children - only first level
@@ -28,6 +35,25 @@ So it begins. My cheat sheet for CSS.
 * classes - 10 points
 * elements - 1 point
 * !important - overrides everything (try not to use this, rather write nice and clean code!)
+
+### The box model
+How (block level) elements represent themselves in terms of space.
+![The box model](https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png)
+```css
+.box {
+  margin: 30px;
+  padding: 30px;
+  border: 1px solid black;
+  width: 400px; /* width of the blue box */ 
+  height: 200px;
+  /* 
+    total width will be 522px = 400px + 2*margin + 2*padding + 2*border 
+  */
+  /*
+    that means that if we set the width to 100%, it can break through and produce unwanted behavior
+  */ 
+}
+```
 
 # CSS properties
 ### Font size
