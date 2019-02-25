@@ -4,6 +4,7 @@ So it begins. My cheat sheet for CSS.
 ### Terminology 
 * descendants - children + grandchildren + ... of
 * children - only first level
+* inheritance - inherits the style from the parent element (the ```inherit``` value)
 
 ### Important tips
 * the browser is "reading" the CSS from top to bottom (cascade) - two identical selectors with different properties, the bottom one will win
@@ -72,4 +73,14 @@ Note: some font families don't have certain weights as their options!
 .container {
   font-weight: bolder;
 }
+```
+
+### Text transform
+Changing the letter casing.
+Possible values: ```none|capitalize|uppercase|lowercase|initial|inherit```
+```css
+.container {
+  text-transform: uppercase;
+}
+
 ```
