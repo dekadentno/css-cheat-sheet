@@ -82,5 +82,14 @@ Possible values: ```none|capitalize|uppercase|lowercase|initial|inherit```
 .container {
   text-transform: uppercase;
 }
-
 ```
+
+### Text color
+Changing the color of the text.
+```css
+ .container {
+  color: blue;
+  color: #FEFEFE;
+ }
+```
+
