@@ -41,16 +41,15 @@ How (block level) elements represent themselves in terms of space.
 ![The box model](https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png)
 ```css
 .box {
-  margin: 30px;
+  margin: 30px 20px 15px 5px; /* top-right-bottom-left */
   padding: 30px;
   border: 1px solid black;
   width: 400px; /* width of the blue box */ 
   height: 200px;
   /* 
     total width will be 522px = 400px + 2*margin + 2*padding + 2*border 
-  */
-  /*
     that means that if we set the width to 100%, it can break through and produce unwanted behavior
+    pay attention to collapsing margins - 30px + 30px =/= 60px.
   */ 
 }
 ```
