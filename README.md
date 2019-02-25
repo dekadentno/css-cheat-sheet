@@ -5,8 +5,8 @@ So it begins. My cheat sheet for CSS.
 I was inspired and finally motivated to learn CSS because of [iamshaunjp](https://github.com/iamshaunjp) aka [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) and his fantastic tutorials.
 
 ### HTML elements
-* block elements - always starts on a new line and takes up the full width available (div, fieldset, form, footer, h1-h6, header, li, nav, ol, p, table, ul, video)
-* inline elements - do not start on a new line and only take up as much width as necessary (a, button, i, img, input, label, span, strong, textarea)
+* block elements - always starts on a new line and takes up the whole block (div, fieldset, form, footer, h1-h6, header, li, nav, ol, p, table, ul, video)
+* inline elements - do not start on a new line and only take up as much width as necessary (a, button, i, img, input, label, span, strong, textarea). Margin top and botton won't be applied to them because the box model isn't working for inline elements. If we want them to be treated as block elements, we have to give them the ```display: block``` profull width availableperty. If we want them to be treated like blocked AND inline element, we should give the m ```display: inline-block```
 
 ### Terminology 
 * descendants - children + grandchildren + ... of
