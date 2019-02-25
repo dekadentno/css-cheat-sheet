@@ -15,3 +15,11 @@ This file will contain pieces of code that don't belong in the cheat sheet but a
   width 300px;
 } 
 ```
+
+### Center the content in a div
+```css
+.box{
+  padding: 30px 25%; /* 30px top and bottom, 25% of element width on the left and right */
+  border: 1px solid black;
+}
+```
