@@ -7,7 +7,7 @@ So it begins. My cheat sheet for CSS.
 
 ### Important tips
 * the browser is "reading" the CSS from top to bottom (cascade) - two identical selectors with different properties, the bottom one will win
-* 
+* if some font families have 2 words, we need to put them in quote marks
 
 ### Selectors
 * ```#container``` - ID selector
@@ -57,9 +57,19 @@ Note: some families already exist on user's computer. Remember to use the font f
 ```
 
 ### Text decoration
-Possible values: ```inerhit line-through none underline overline inherit;```
+Possible values: ```inerhit|line-through|none|underline|overline|inherit```
 ```css
 .container {
   text-decoration: underline;
+}
+```
+
+### Font weight
+Possible values: ```normal|bold|bolder|lighter|number|initial|inherit```
+Note: Bold is same as 700, normal is same as 400. Most font families won't have every possible number value.
+Note: some font families don't have certain weights as their options!
+```css
+.container {
+  font-weight: bolder;
 }
 ```
