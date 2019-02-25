@@ -2,7 +2,7 @@
 So it begins. My cheat sheet for CSS.
 
 ### Regards & learning materials
-I was inspired and finally motivated to learn CSS because of [iamshaunjp](https://github.com/iamshaunjp) aka [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) and his fantastic tutorials.
+I was inspired and finally motivated to learn CSS because of [iamshaunjp](https://github.com/iamshaunjp) @iamshaunjp aka [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) and his fantastic tutorials.
 
 ### HTML elements
 * block elements - always starts on a new line and takes up the full width available (div, fieldset, form, footer, h1-h6, header, li, nav, ol, p, table, ul, video)
@@ -93,7 +93,9 @@ Possible values: ```inerhit|line-through|none|underline|overline|inherit```
 
 ### Font weight
 Possible values: ```normal|bold|bolder|lighter|number|initial|inherit```
+
 Note: Bold is same as 700, normal is same as 400. Most font families won't have every possible number value.
+
 Note: some font families don't have certain weights as their options!
 ```css
 .container {
@@ -103,6 +105,7 @@ Note: some font families don't have certain weights as their options!
 
 ### Text transform
 Changing the letter casing.
+
 Possible values: ```none|capitalize|uppercase|lowercase|initial|inherit```
 ```css
 .container {
@@ -121,7 +124,9 @@ Changing the color of the text.
 
 ### Letter spacing and word spacing
 Spacing between letters: e.g. s p a c i n g
+
 Spacing between words: e.g. space   between   words
+
 Values mostly in pixels;
 ```css
 .container{
@@ -133,7 +138,9 @@ Values mostly in pixels;
 
 ### Line height
 Vertical space between lines in a paragraph. Not the gap, just the height of the line.
+
 The font size itself is not included, meaning,if you put ```line-height``` to be 12px and the ```font-size``` itself is 12px, nothig will happen.
+
 Possible values: normal|number|length|initial|inherit
 ```css
 .container{
