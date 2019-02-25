@@ -2,7 +2,7 @@
 So it begins. My cheat sheet for CSS.
 
 ### Regards & learning materials
-I was inspired and finally motivated to learn CSS because of [iamshaunjp](https://github.com/iamshaunjp) @iamshaunjp aka [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) and his fantastic tutorials.
+I was inspired and finally motivated to learn CSS because of [iamshaunjp](https://github.com/iamshaunjp) aka [The Net Ninja](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg) and his fantastic tutorials.
 
 ### HTML elements
 * block elements - always starts on a new line and takes up the full width available (div, fieldset, form, footer, h1-h6, header, li, nav, ol, p, table, ul, video)
