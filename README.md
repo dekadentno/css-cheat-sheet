@@ -147,3 +147,12 @@ Possible values: normal|number|length|initial|inherit
   line-height: 2em; /* the case with em's is font-size times number of em's */
 }
 ```
+
+### Border style
+Mostly used values: solid|none|hidden
+```css
+.container{
+  border: 1px solid black; /* width, style, color */
+}
+```
+
