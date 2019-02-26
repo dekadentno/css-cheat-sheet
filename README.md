@@ -183,3 +183,4 @@ It can be colored or used an image background.
   background-repeat: no-repeat; /* if the image is smaller than the container and we don't want it to repeat */
   background-position: center; /* or we can specify in pixels */
   background-size: 100px; /* if we have an background image, we can resize it */
+}
