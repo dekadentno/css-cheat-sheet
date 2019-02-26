@@ -172,3 +172,14 @@ They Can be static (in pixels) and dynamic (in percentages).
 }
 ```
 
+### Background
+It can be colored or used an image background.
+```css
+.container {
+  width: 500px;
+  height: 500px;
+  background-color: #606060;
+  background-image: url(https:url);
+  background-repeat: no-repeat; /* if the image is smaller than the container and we don't want it to repeat */
+  background-position: center; /* or we can specify in pixels */
+  background-size: 100px; /* if we have an background image, we can resize it */
