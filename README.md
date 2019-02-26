@@ -153,6 +153,8 @@ Mostly used values: solid|none|hidden
 ```css
 .container {
   border: 1px solid black; /* width, style, color */
+  border-radius: 10px; /* for rounded corners; it has 4 corners */
+  border-radius: 5px 10px 30px 20px; /* different corenrs */
 }
 ```
 
@@ -169,3 +171,4 @@ They Can be static (in pixels) and dynamic (in percentages).
   display: inline-block; /* display inline but keep respecting the box model (block elements) */
 }
 ```
+
