@@ -200,3 +200,16 @@ background: linear-gradient(direction, color-stop1, color-stop2, ...);
   background: linear-gradient(to bottom right, red, yellow);
 }
 ```
+
+### Box shadow
+Possible values: none|h-offset v-offset blur spread color |inset|initial|inherit
+
+```css
+.container {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #3d56b9;
+  position: relative;
+  box-shadow: 0 0 10px #3d56b9;
+}
+```
