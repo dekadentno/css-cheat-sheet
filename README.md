@@ -184,3 +184,18 @@ It can be colored or used an image background.
   background-position: center; /* or we can specify in pixels */
   background-size: 100px; /* if we have an background image, we can resize it */
 }
+
+### Gradient
+Smooth transitions between colors.
+Useful links:
+* https://uigradients.com
+* http://www.gradients.io/
+Important: add prefixes like ```-moz-``` and ```-webkit-``` for Mozilla Firefox and other supports.
+```css
+/* syntax */
+background: linear-gradient(direction, color-stop1, color-stop2, ...);
+.container {
+  background: yellow; /* fallback, if gradient isn't supported in the browser */
+  background: linear-gradient(to bottom right, red, yellow);
+}
+```
