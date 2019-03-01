@@ -184,6 +184,7 @@ It can be colored or used an image background.
   background-position: center; /* or we can specify in pixels */
   background-size: 100px; /* if we have an background image, we can resize it */
 }
+```
 
 ### Gradient
 Smooth transitions between colors.
