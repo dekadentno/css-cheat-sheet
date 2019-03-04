@@ -213,3 +213,26 @@ Possible values: none|h-offset v-offset blur spread color |inset|initial|inherit
   box-shadow: 0 0 10px #3d56b9;
 }
 ```
+
+# CSS variables
+Also known as "custom properties" (same thing). They are just like regular properties, just with ```--``` before them.
+
+E.g. ```--my-property: value;```
+```css
+/*
+the easiest way to declare them and use them anywhere,
+because they are scoped to the element where they are defined 
+*/
+:root {
+  --my-color: #aabbcc;
+}
+.box {
+  color: var(--my-color);
+  width: 500px;
+  height: 500px;
+}
+
+.outro-text {
+  color: var(--my-color);
+}
+```
