@@ -1,4 +1,4 @@
-# css-cheat-sheet
+# CSS Cheat Sheet
 So it begins. My cheat sheet for CSS.
 
 ### Regards & learning materials
@@ -236,3 +236,9 @@ because they are scoped to the element where they are defined
   color: var(--my-color);
 }
 ```
+
+# CSS positioning
+
+### Floating elements
+Possible values: left|right|inherit|none
+Important: removes the element from the real document flow and floats it somewhere.
