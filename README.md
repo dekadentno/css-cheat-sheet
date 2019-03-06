@@ -241,4 +241,28 @@ because they are scoped to the element where they are defined
 
 ### Floating elements
 Possible values: left|right|inherit|none
+
 Important: removes the element from the real document flow and floats it somewhere.
+
+Example: floating columns
+```css
+/* both are block level elements */
+.left, .right {
+  float: left;
+  width: 46%; /* not 50% because of padding + margin */
+  padding: 1%;
+  margin 1%;
+  background: yellow;
+}
+
+/*
+wrapper of .left and .right
+this css makes sure that anything after the .columns is cleared, meaning, it respects the normal document flow again
+(because float will break it)
+*/
+.columns {
+  display: block;
+  content: "";
+  clear: both;
+}
+```
