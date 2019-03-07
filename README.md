@@ -286,3 +286,11 @@ With it```z-index```, we are controling the stacking order.
   position: relative; /*when using z-index, we have to include the position value*/
 }
 ```
+
+# Flexbox
+A parent element gets a ```display: flex``` property, and his children become flex items. We can control how they shrink and how they grow.
+```css
+.container {
+  display: flex;
+}
+```
