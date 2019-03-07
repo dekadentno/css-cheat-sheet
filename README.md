@@ -256,7 +256,7 @@ Example: floating columns
 }
 
 /*
-wrapper of .left and .right
+wrapper of .left and .right (always the parent element!)
 this css makes sure that anything after the .columns is cleared, meaning, it respects the normal document flow again
 (because float will break it)
 */
@@ -272,4 +272,5 @@ Possible values: static|relative|absolute|fixed|inherit
 
 * relative - the element is positioned relative to its normal position. It does NOT remove content from the normal document flow, it is still occuping it's expected position, but it's mostly just "offseted" from it's original position with top|bottom|right|left (without them nothing will happen). When relative element move, no other element on the layout are affected.
 * absolute - allows you to place your element precisely where you want it. Often used in combination with relative positioning. The positioning is done relative to the first relatively (or absolutely) positioned parent element. The element is removed from the normal document flow.
+* fixed - mostly used to fix the nav bar to the top, so when we scroll down, it stays "sticky". It also removes the element from the normal document flow.
 
