@@ -283,5 +283,6 @@ With it```z-index```, we are controling the stacking order.
 ```css
 .nav {
   z-index: 1;
+  position: relative; /*when using z-index, we have to include the position value*/
 }
 ```
