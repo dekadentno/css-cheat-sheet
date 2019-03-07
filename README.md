@@ -274,3 +274,14 @@ Possible values: static|relative|absolute|fixed|inherit
 * absolute - allows you to place your element precisely where you want it. Often used in combination with relative positioning. The positioning is done relative to the first relatively (or absolutely) positioned parent element. The element is removed from the normal document flow.
 * fixed - mostly used to fix the nav bar to the top, so when we scroll down, it stays "sticky". It also removes the element from the normal document flow.
 
+### Stack order and z-index
+Stack order - the further down in the HTML you are, the higher the stacking order is (LIFO).
+
+E.g. for semantic rasons, the navigation should be at the top od the page, but visualy above all elements.
+
+With it```z-index```, we are controling the stacking order.
+```css
+.nav {
+  z-index: 1;
+}
+```
