@@ -309,3 +309,6 @@ Same as ```flex-grow```, just for shrinking items. When we start shrinking the b
 
 ### flex-wrap
 If flex-items have a min width, when shrinking the browser, the last element will eventually exit the screen and a scrollbar will appear. If we want to move that item to the next row, we can use ```flex-wrap: wrap```. If we want that item to move above other flex items, we can use ```flex-wrap: wrap-reverse```. Check the codepen url.
+
+### flex-basis
+Similar to ```min-width``` but instead of showing the scrollbar when shrinked beneath the defined value, they will shrink as normal flex items.
