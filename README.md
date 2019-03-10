@@ -312,3 +312,9 @@ If flex-items have a min width, when shrinking the browser, the last element wil
 
 ### flex-basis
 Similar to ```min-width``` but instead of showing the scrollbar when shrinked beneath the defined value, they will shrink as normal flex items.
+
+### justify-content
+Aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+
+Possible values: flex-start|flex-end|center|space-between|space-around|initial|inherit
+
