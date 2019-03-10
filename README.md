@@ -288,9 +288,24 @@ With it```z-index```, we are controling the stacking order.
 ```
 
 # Flexbox
-A parent element gets a ```display: flex``` property, and his children become flex items. We can control how they shrink and how they grow.
+A parent element gets a ```display: flex``` property, and his direct desendants become flex items. We can control how they shrink and how they grow. Flex items stack left to right.
+Playground: https://codepen.io/collection/AWOkYM/
 ```css
 .container {
   display: flex;
 }
 ```
+
+### flex-grow
+If there is room left in the container, items will grow and fill that space.
+```css
+.box {
+  flex-grow: 1; /* grow rate. every box will have the same rate */
+}
+```
+
+### flex-shrink
+Same as ```flex-grow```, just for shrinking items. When we start shrinking the browser window beneath the parent width, the items will shrink in the given rate.
+
+### flex-wrap
+If flex-items have a min width, when shrinking the browser, the last element will eventually exit the screen and a scrollbar will appear. If we want to move that item to the next row, we can use ```flex-wrap: wrap```. If we want that item to move above other flex items, we can use ```flex-wrap: wrap-reverse```. Check the codepen url.
