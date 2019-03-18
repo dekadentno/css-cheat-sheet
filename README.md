@@ -318,3 +318,14 @@ Aligns the flexible container's items when the items do not use all available sp
 
 Possible values: flex-start|flex-end|center|space-between|space-around|initial|inherit
 
+### flex-flow
+Make the flexible items display in reverse order, or vertically.
+
+```css
+.container {
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-flow: row-reverse wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+```
