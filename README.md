@@ -316,6 +316,10 @@ Similar to ```min-width``` but instead of showing the scrollbar when shrinked be
 ### justify-content
 Aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
 
+In other hand, on the cross-axis, the same thing does the ```align-items``` property.
+
+__Important!__ The elements __always__ follow the direction of the main-axis!
+
 Possible values: flex-start|flex-end|center|space-between|space-around|initial|inherit
 
 ### flex-flow
