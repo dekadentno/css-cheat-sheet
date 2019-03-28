@@ -333,3 +333,15 @@ Make the flexible items display in reverse order, or vertically.
   flex-flow: row-reverse wrap;
 }
 ```
+# Grid
+
+When you put a ```display: grid``` on a container, you make its direct children grid items. Just putting ```display: grid``` doesn't do much because we have to "slice and dice" columns and rows, so we have to say how big they have to be.
+
+```
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 20px;
+}
+
+```
