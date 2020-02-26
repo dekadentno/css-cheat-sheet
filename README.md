@@ -341,7 +341,7 @@ Make the flexible items display in reverse order, or vertically.
 
 When you put a ```display: grid``` on a container, you make its direct children grid items. Just putting ```display: grid``` doesn't do much because we have to "slice and dice" columns and rows, so we have to say how big they have to be.
 
-```
+```css
 .container {
   display: grid;
   grid-template-columns: 100px 100px 100px;
@@ -349,3 +349,24 @@ When you put a ```display: grid``` on a container, you make its direct children 
 }
 
 ```
+
+# Responsive design and media queries
+
+Viewport meta tags tell the browser what width the viewport of the browser should be. Example of how a webpage can look like if the viewport meta tag is not used can be found [here](https://www.w3schools.com/tags/tag_meta.asp).
+Media queries tell the browser how to style an element at particular viewport dimensions. They allow us to style elements differently on different widths.
+
+```css
+# media query example
+
+@media screen and (max-width: 1400px) {
+# on devices with screen width less than 1400 pixels, I want to apply these styles
+# or: when it reaches this width or below, apply these styles
+# we are adding just the styles that we want to override
+  .test {
+    font-size: 14px;
+  }
+
+}
+```
+
+
