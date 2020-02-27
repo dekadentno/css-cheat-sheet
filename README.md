@@ -35,12 +35,19 @@ I was inspired and finally motivated to learn CSS because of [iamshaunjp](https:
 * ```ul:nth-child(5)``` - structural pseudo selector (parent-child relationship) - 5th li tag, element without children etc.
 * ```*``` - universal selector (mostly used to override default styles)
 
-### Selector specific points
+### Selector specificity points
+
+CSS Specificity is the set of the rules applied to CSS selectors in order to determine which style is applied to an element. The more specific a CSS style is, the higher point value it accrues, and the likelier it is to be present on the element's style.
+
+* inline style - 1000 points
 * ID - 100 points
-* classes - 10 points
+* classes, pseudo class, attribute - 10 points
 * elements - 1 point
 * !important - overrides everything (try not to use this, rather write nice and clean code!)
 
+```css
+body #content .data img(:hover) /* 1 + 100 + 10 + 1 + 10 = 122 */
+```
 ### The box model
 How (block level) elements represent themselves in terms of space.
 ![The box model](https://s3.amazonaws.com/viking_education/web_development/web_app_eng/css_box_model_chrome.png)
