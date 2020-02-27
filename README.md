@@ -7,6 +7,7 @@ I was inspired and finally motivated to learn CSS because of [iamshaunjp](https:
 ### Useful shit
 * https://github.com/sdras/cssgridgenerator
 * https://github.com/vladocar/SMART-CSS-GRID
+* https://css-tricks.com/
 
 ### HTML elements
 * block elements - always starts on a new line and takes up the whole block (div, fieldset, form, footer, h1-h6, header, li, nav, ol, p, table, ul, video)
@@ -56,6 +57,16 @@ How (block level) elements represent themselves in terms of space.
     pay attention to collapsing margins - 30px + 30px =/= 60px.
   */ 
 }
+```
+
+# HTML variables
+```css
+# definition
+:root {
+  --primary: blue;
+}
+# usage
+background: var(--primary);
 ```
 
 # CSS properties
@@ -344,10 +355,34 @@ When you put a ```display: grid``` on a container, you make its direct children 
 ```css
 .container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px; /* 3 columns */
   grid-gap: 20px;
 }
 
+```
+### grid-template-columns
+With ```grid-template-columns``` we are defining how many columns does our grid have and what width should they be.
+Whatever the full width of the grid is, each column is going to be 1 fraction in width.
+The fr unit allows you to set the size of a track as a fraction of the free space of the grid container. For example, this will set each item to one third the width of the grid container:
+```css
+.container {
+  grid-template-columns: 1fr 1fr 1fr; /* shorthand: repeat(3, 1f3) */
+}
+```
+
+### grid-column
+Check the css grid generator by [sdras](https://github.com/sdras)
+```css
+.one {
+  grid-column: 1/5; /* start from line one all the way to line 5 (first 4 columns) */
+}
+.two {
+  grid-column: 6/9; /* start from line 6 all the way to line 9 */
+}
+.three {
+  grid-column: 10/12; /* start from line 12 all the way to line 12 */
+  grid-row: 2; /* start at 2nd row */
+}
 ```
 
 # Responsive design and media queries
@@ -356,16 +391,25 @@ Viewport meta tags tell the browser what width the viewport of the browser shoul
 Media queries tell the browser how to style an element at particular viewport dimensions. They allow us to style elements differently on different widths.
 
 ```css
-# media query example
+/* media query example */
 
 @media screen and (max-width: 1400px) {
-# on devices with screen width less than 1400 pixels, I want to apply these styles
-# or: when it reaches this width or below, apply these styles
-# we are adding just the styles that we want to override
+/*
+on devices with screen width less than 1400 pixels, I want to apply these styles
+or: when it reaches this width or below, apply these styles
+we are adding just the styles that we want to override
+*/
   .test {
     font-size: 14px;
   }
-
+}
+@media screen and (min-width: 620px) {
+/*
+on devices with screen width at least 620 pixels, I want to apply these styles
+*/
+  .test {
+    font-size: 14px;
+  }
 }
 ```
 
